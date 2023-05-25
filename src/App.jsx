@@ -7,6 +7,7 @@ function App() {
   return (
     <>
      <h1 className='bg-rose-500 '>Chat app</h1>
+     <h2>Sahar</h2>
     </>
   )
 }
