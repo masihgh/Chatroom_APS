@@ -1,7 +1,9 @@
 const Chatroom = () => {
   return (
     <div className="bg-accent-content w-full h-screen">
+      {/* chatroom section */}
       <section className="px-40">
+      {/* Message sender */}
         <div className="chat chat-start">
           <div className="chat-image avatar">
             <div className="w-10 rounded-full">
@@ -15,6 +17,7 @@ const Chatroom = () => {
           <div className="chat-bubble">You were the Chosen One!</div>
           <div className="chat-footer opacity-50">Delivered</div>
         </div>
+        {/* message receiver  */}
         <div className="chat chat-end">
           <div className="chat-image avatar">
             <div className="w-10 rounded-full">
