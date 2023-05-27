@@ -1,7 +1,7 @@
 const Chatroom = () => {
   return (
     <div className="bg-accent-content w-full h-screen">
-      {/* chatroom section */}
+      {/* chatrooms section */}
       <section className="md:px-40 px-2">
         {/* Message sender */}
         <div className="chat chat-start">
