@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 
 import { useState } from 'react'
+import Chatroom from './pages/Chatroom'
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -32,11 +33,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1 className="bg-rose-500 ">Chat app</h1>
-      <h2>Sahar</h2>
-
-      <h1 className="bg-rose-500 ">Chat app hello</h1>
-      <h2>kani</h2>
+      <Chatroom />
     </>
   );
 }
