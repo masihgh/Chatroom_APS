@@ -1,6 +1,6 @@
 const Chatroom = () => {
   return (
-    <div className="bg-accent-content w-full h-screen">
+    <div data-theme="lightChat" className="bg-base-100 w-full">
       {/* chatrooms section */}
       <section className="md:px-40 px-2">
         {/* Message sender */}
@@ -33,7 +33,7 @@ const Chatroom = () => {
         </div>
       </section>
       {/* send message input */}
-      <div className="bg-primary h-1/5 w-full absolute bottom-0 ">
+      <div className="bg-base-300 h-1/5 w-full absolute bottom-0 ">
         <div className="form-control py-12 md:px-32  px-2">
           <div className="input-group">
             <input
