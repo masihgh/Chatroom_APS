@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-
-import { useState } from 'react'
 import Chatroom from './pages/Chatroom'
 
 // Import the functions you need from the SDKs you need
