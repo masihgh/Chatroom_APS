@@ -128,11 +128,3 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-<<<<<<< HEAD
-
-# Optional npm cache directory
-.npm
-Chatroom_APS
-.vite
-=======
->>>>>>> main
