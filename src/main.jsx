@@ -26,6 +26,10 @@ useEffect(() => {
   return unsubscribe;
 }, []);
 
+export const UserAuth = () => {
+  return useContext(AuthContext);
+}
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AuthContext.Provider
