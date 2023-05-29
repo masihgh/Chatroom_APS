@@ -31,6 +31,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Login />} />
@@ -43,6 +44,7 @@ function App() {
           }
         />
       </Routes>
+    </>
   );
 }
 
