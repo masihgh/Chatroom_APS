@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -13,9 +14,10 @@ const firebaseConfig = {
   storageBucket: "chatroom-aps.appspot.com",
   messagingSenderId: "445265524647",
   appId: "1:445265524647:web:de78a95bbd7d911e14a882",
-  measurementId: "G-774G335QS7"
+  measurementId: "G-774G335QS7",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
