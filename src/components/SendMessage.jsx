@@ -1,8 +1,9 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useContext, useState } from "react";
 
-import { db } from "../firebase";
+
 import { AuthContext } from "../main";
+import { db } from "../App";
 
 const SendMessage = () => {
   const [value, setValue] = useState("");

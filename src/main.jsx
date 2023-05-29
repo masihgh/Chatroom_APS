@@ -2,7 +2,7 @@ import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./assets/index.css";
-const AuthContext = createContext();
+export const AuthContext = createContext();
 
 const [currentUser, setCurrentUser] = useState(null);
 const [loading, setLoading] = useState(true);
