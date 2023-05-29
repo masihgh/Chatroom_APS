@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import Chatroom from './pages/Chatroom'
+import Chatroom from "./pages/Chatroom";
+import Login from "./pages/Login";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -17,13 +18,12 @@ const firebaseConfig = {
   storageBucket: "chatroom-aps.appspot.com",
   messagingSenderId: "445265524647",
   appId: "1:445265524647:web:de78a95bbd7d911e14a882",
-  measurementId: "G-774G335QS7"
+  measurementId: "G-774G335QS7",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +31,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Login />
       <Chatroom />
     </>
   );
