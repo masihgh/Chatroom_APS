@@ -1,14 +1,11 @@
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { useContext, useState } from "react";
-
-
-import { AuthContext } from "../main";
-import { db } from "../App";
+import {  useState } from "react";
+import { db } from "../firebase";
+import { UserAuth } from "../context/AuthContext";
 
 const SendMessage = () => {
   const [value, setValue] = useState("");
-  const { currentUser } = useContext(AuthContext);
-
+  const { currentUser } = UserAuth();
   const handleSendMessage = async (e) => {
     e.preventDefault();
 
