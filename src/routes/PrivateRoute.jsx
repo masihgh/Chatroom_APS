@@ -8,3 +8,4 @@ export const PrivateRoute = ({ children }) => {
     return <Navigate to="/" replace={true}  />
   }
   return children;
+}
