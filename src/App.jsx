@@ -2,6 +2,8 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Chatroom from "./pages/Chatroom";
 import Login from "./pages/Login";
+import { Route, Routes } from "react-router-dom";
+import { PrivateRoute } from "./routes/PrivateRoute";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
@@ -29,11 +31,18 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
       <Navbar />
-      <Login />
-      <Chatroom />
-    </>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route
+          path="/chat"
+          element={
+            <PrivateRoute>
+              <ChatRoom />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
   );
 }
 
